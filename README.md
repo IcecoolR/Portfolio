@@ -1,2 +1,4 @@
-# RichardPortfolio
- Portfolio about me and my interests.
+# Portfolio
+
+ This repository hosts my portfolio.
+ A website that I talk about me and my interests.
