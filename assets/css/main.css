@@ -2061,8 +2061,6 @@ input, select, textarea {
 
 /* Button */
 
-	input[type="submit"],
-	input[type="reset"],
 	input[type="button"],
 	button,
 	.button {
@@ -2091,16 +2089,12 @@ input, select, textarea {
 		white-space: nowrap;
 	}
 
-		input[type="submit"].icon:before,
-		input[type="reset"].icon:before,
 		input[type="button"].icon:before,
 		button.icon:before,
 		.button.icon:before {
 			margin-right: 0.5rem;
 		}
 
-		input[type="submit"].icon.solo,
-		input[type="reset"].icon.solo,
 		input[type="button"].icon.solo,
 		button.icon.solo,
 		.button.icon.solo {
@@ -2115,8 +2109,6 @@ input, select, textarea {
 			white-space: nowrap;
 		}
 
-			input[type="submit"].icon.solo:before,
-			input[type="reset"].icon.solo:before,
 			input[type="button"].icon.solo:before,
 			button.icon.solo:before,
 			.button.icon.solo:before {
@@ -2133,16 +2125,12 @@ input, select, textarea {
 				text-indent: 0;
 			}
 
-		input[type="submit"].fit,
-		input[type="reset"].fit,
 		input[type="button"].fit,
 		button.fit,
 		.button.fit {
 			width: 100%;
 		}
 
-		input[type="submit"].small,
-		input[type="reset"].small,
 		input[type="button"].small,
 		button.small,
 		.button.small {
@@ -2152,8 +2140,6 @@ input, select, textarea {
 			padding: 0 1.5rem;
 		}
 
-		input[type="submit"].large,
-		input[type="reset"].large,
 		input[type="button"].large,
 		button.large,
 		.button.large {
@@ -2165,8 +2151,6 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
-			input[type="submit"],
-			input[type="reset"],
 			input[type="button"],
 			button,
 			.button {
@@ -2175,8 +2159,6 @@ input, select, textarea {
 				line-height: 3.25rem;
 			}
 
-				input[type="submit"].large,
-				input[type="reset"].large,
 				input[type="button"].large,
 				button.large,
 				.button.large {
@@ -2187,9 +2169,6 @@ input, select, textarea {
 
 		}
 
-		input[type="submit"].disabled, input[type="submit"]:disabled,
-		input[type="reset"].disabled,
-		input[type="reset"]:disabled,
 		input[type="button"].disabled,
 		input[type="button"]:disabled,
 		button.disabled,
@@ -2200,8 +2179,6 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
-	input[type="submit"],
-	input[type="reset"],
 	input[type="button"],
 	button,
 	.button {
@@ -2210,8 +2187,6 @@ input, select, textarea {
 		color: #212931 !important;
 	}
 
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
@@ -2219,8 +2194,6 @@ input, select, textarea {
 			color: #18bfef !important;
 		}
 
-		input[type="submit"].primary,
-		input[type="reset"].primary,
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
@@ -2229,8 +2202,6 @@ input, select, textarea {
 			color: #ffffff !important;
 		}
 
-			input[type="submit"].primary:hover,
-			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
@@ -2780,16 +2751,12 @@ input, select, textarea {
 						padding-top: 0;
 					}
 
-					ul.actions:not(.fixed) li input[type="submit"],
-					ul.actions:not(.fixed) li input[type="reset"],
 					ul.actions:not(.fixed) li input[type="button"],
 					ul.actions:not(.fixed) li button,
 					ul.actions:not(.fixed) li .button {
 						width: 100%;
 					}
 
-						ul.actions:not(.fixed) li input[type="submit"].icon:before,
-						ul.actions:not(.fixed) li input[type="reset"].icon:before,
 						ul.actions:not(.fixed) li input[type="button"].icon:before,
 						ul.actions:not(.fixed) li button.icon:before,
 						ul.actions:not(.fixed) li .button.icon:before {
@@ -3285,7 +3252,7 @@ input, select, textarea {
 
 	#intro {
 		color: #ffffff;
-		padding: 8rem 4rem 6rem 4rem ;
+		padding: 8rem 4rem 6rem 4rem;
 		-moz-align-items: center;
 		-webkit-align-items: center;
 		-ms-align-items: center;
@@ -3348,8 +3315,6 @@ input, select, textarea {
 			border-bottom-color: #ffffff;
 		}
 
-		#intro input[type="submit"],
-		#intro input[type="reset"],
 		#intro input[type="button"],
 		#intro button,
 		#intro .button {
@@ -3358,8 +3323,6 @@ input, select, textarea {
 			color: #ffffff !important;
 		}
 
-			#intro input[type="submit"]:hover,
-			#intro input[type="reset"]:hover,
 			#intro input[type="button"]:hover,
 			#intro button:hover,
 			#intro .button:hover {
@@ -3367,8 +3330,6 @@ input, select, textarea {
 				color: #18bfef !important;
 			}
 
-			#intro input[type="submit"].primary,
-			#intro input[type="reset"].primary,
 			#intro input[type="button"].primary,
 			#intro button.primary,
 			#intro .button.primary {
@@ -3377,8 +3338,6 @@ input, select, textarea {
 				color: #1e252d !important;
 			}
 
-				#intro input[type="submit"].primary:hover,
-				#intro input[type="reset"].primary:hover,
 				#intro input[type="button"].primary:hover,
 				#intro button.primary:hover,
 				#intro .button.primary:hover {
