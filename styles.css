@@ -1,0 +1,65 @@
+/* Mobile and Global Styles */
+/* Applies to screens smaller than 500px and above unless overwritten below */
+
+ul, a, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #212830;
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+#intro {
+  color: #ffffff;
+  text-align: center;
+  margin: 8rem 0rem;
+  font-size: 2rem;
+}
+
+#intro p {
+  font-size: 1.5rem;
+}
+
+#main {
+  background-color: #ffffff;
+  margin: 4rem;
+
+}
+
+#mainNav {
+  background-color: #212830;
+  flex-direction: column;
+}
+
+#mainNav ul {
+  display: flex;
+}
+
+#mainNav a {
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+/* Tablet Styles */
+
+@media screen and (min-width: 500px) {
+
+}
+
+/* Desktop Styles */
+
+@media screen and (min-width: 1000px) {
+
+}
