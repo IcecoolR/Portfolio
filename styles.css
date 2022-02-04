@@ -7,6 +7,9 @@ ul, a, body {
   border: 0;
   font: inherit;
   vertical-align: baseline;
+}
+
+body {
   background-color: #212830;
   background-image: url('background.jpg');
   background-repeat: no-repeat;
@@ -27,27 +30,60 @@ ul, a, body {
 }
 
 #main {
-  background-color: #ffffff;
   margin: 4rem;
-
 }
 
 #mainNav {
-  background-color: #212830;
+  background-color: #f1eeee4d;
   flex-direction: column;
+  opacity: 0.4;
 }
 
 #mainNav ul {
   display: flex;
+  flex-direction: row;
 }
 
 #mainNav a {
   padding: 2rem 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: white;
   text-decoration: none;
   text-align: center;
   width: 100%;
+  cursor: pointer;
+}
+
+#about {
+  display: block;
+}
+
+#workEducation {
+  display: none;
+}
+
+#projects {
+  display: none;
+}
+
+#interests {
+  display: none;
+}
+
+.section {
+  background-color: #aaaaaa;
+}
+
+#socialsNav {
+  background-color: #aaaaaa;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 
