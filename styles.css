@@ -35,18 +35,17 @@ body {
 
 #mainNav {
   background-color: #f1eeee4d;
-  flex-direction: column;
   opacity: 0.4;
 }
 
 #mainNav ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 #mainNav a {
-  padding: 2rem 1rem;
-  font-size: 1.5rem;
+  padding: 2rem 0rem;
+  font-size: 1.4rem;
   color: white;
   text-decoration: none;
   text-align: center;
@@ -72,25 +71,58 @@ body {
 
 .section {
   background-color: #aaaaaa;
+  height: 4rem;
+  padding: 2rem;
 }
 
 #socialsNav {
   background-color: #aaaaaa;
+  padding: 2rem 0rem;
+  text-align: center;
 }
 
-.hide {
-  display: none;
+#socialsNav a {
+  padding: 1rem;
+  font-size: 2rem;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
 }
 
-.show {
-  display: block;
+.fa:hover {
+  opacity: 0.4;
 }
 
+.fa-facebook {
+  background: #3B5998;
+}
+
+.fa-instagram {
+  background: #125688;
+}
+
+.fa-steam {
+  background: #1A2B3D;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+}
+
+.fa-github {
+  background: #25292f;
+}
 
 
 /* Tablet Styles */
 
 @media screen and (min-width: 500px) {
+
+  #mainNav ul {
+    flex-direction: row;
+  }
 
 }
 
