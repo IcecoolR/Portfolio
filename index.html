@@ -1,4 +1,9 @@
 <!DOCTYPE HTML>
+<!--
+	Style inspired by Massively on HTML5 UP (html5up.net | @ajlkn)
+	Credit to fontawesome.com for provideing Social Media and Arrow icons
+	Designed and created by Richard, 25/02/2022
+-->
 <html lang="en">
 	<head>
     <meta charset="UTF-8" />
@@ -22,27 +27,40 @@
 
       <nav id="mainNav">
         <ul>
-          <a onclick="aboutButtonHandler()" id="aboutButton">About</a>
-          <a onclick="wordEducationButtonHandler()" id="workEducationButton">Work & Education</a>
-          <a onclick="projectsButtonHandler()" id="projectsButton">Projects</a>
-          <a onclick="interestsButtonHandler()" id="interestsButton">Interests</a>
+          <a id="aboutButton" onclick="aboutButtonHandler()" class="selectedButton">About</a>
+          <a id="workEducationButton" onclick="wordEducationButtonHandler()">Work & Education</a>
+          <a id="projectsButton" onclick="projectsButtonHandler()">Projects</a>
+          <a id="interestsButton" onclick="interestsButtonHandler()">Interests</a>
         </ul>
       </nav>
 
-      <div id="about" class="section">About </div>
-      <div id="workEducation" class="section">Work & Eduaction </div>
-      <div id="projects" class="section">Project </div>
-      <div id="interests" class="section">Interests </div>
+      <div id="about" class="section">
+				About
+			</div>
+
+      <div id="workEducation" class="section">
+				Work & Eduaction
+			</div>
+
+      <div id="projects" class="section">
+				Project
+			</div>
+
+      <div id="interests" class="section">
+				Interests
+			</div>
 
 
       <nav id="socialsNav">
         <ul>
-          <a href="https://www.facebook.com/richard.woolley.568/" class="fa fa-facebook"></a>
-          <a href="https://www.instagram.com/richardwoolley_/" class="fa fa-instagram"></a>
-          <a href="https://play.google.com/store/apps/dev?id=8741244617346173713" class="fa fa-google"></a>
-					<a href="https://steamcommunity.com/id/IcecoolR/" class="fa fa-steam"></a>
-          <a href="https://www.linkedin.com/in/richard-woolley-63a3311b2/" class="fa fa-linkedin"></a>
-          <a href="https://github.com/IcecoolR" class="fa fa-github"></a>
+					<a href="https://www.linkedin.com/in/richard-woolley-63a3311b2/" target="_blank" rel="noopener noreferrer" class="fa fa-linkedin"></a>
+					<a href="https://github.com/IcecoolR" target="_blank" rel="noopener noreferrer" class="fa fa-github"></a>
+					<a href="https://play.google.com/store/apps/dev?id=8741244617346173713" target="_blank" rel="noopener noreferrer" class="fa fa-google"></a>
+          <a href="https://www.facebook.com/richard.woolley.568/" target="_blank" rel="noopener noreferrer" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/richardwoolley_/" target="_blank" rel="noopener noreferrer" class="fa fa-instagram"></a>
+					<a href="https://open.spotify.com/user/richardw-1999?si=385c50a8c38648c5" target="_blank" rel="noopener noreferrer" class="fa fa-spotify"></a>
+					<a href="https://steamcommunity.com/id/IcecoolR/" target="_blank" rel="noopener noreferrer" class="fa fa-steam"></a>
+					<a href="https://www.twitch.tv/icecoolr_yt" target="_blank" rel="noopener noreferrer" class="fa fa-twitch"></a>
         </ul>
       </nav>
 

@@ -10,6 +10,11 @@ const aboutButtonHandler = () => {
   document.getElementById("workEducation").style.display = "none";
   document.getElementById("projects").style.display = "none";
   document.getElementById("interests").style.display = "none";
+
+  document.getElementById("aboutButton").classList.add("selectedButton");
+  document.getElementById("workEducationButton").classList.remove("selectedButton");
+  document.getElementById("projectsButton").classList.remove("selectedButton");
+  document.getElementById("interestsButton").classList.remove("selectedButton");
 }
 
 const wordEducationButtonHandler = () => {
@@ -17,6 +22,11 @@ const wordEducationButtonHandler = () => {
   document.getElementById("workEducation").style.display = "block";
   document.getElementById("projects").style.display = "none";
   document.getElementById("interests").style.display = "none";
+
+  document.getElementById("aboutButton").classList.remove("selectedButton");
+  document.getElementById("workEducationButton").classList.add("selectedButton");
+  document.getElementById("projectsButton").classList.remove("selectedButton");
+  document.getElementById("interestsButton").classList.remove("selectedButton");
 }
 
 const projectsButtonHandler = () => {
@@ -24,6 +34,11 @@ const projectsButtonHandler = () => {
   document.getElementById("workEducation").style.display = "none";
   document.getElementById("projects").style.display = "block";
   document.getElementById("interests").style.display = "none";
+
+  document.getElementById("aboutButton").classList.remove("selectedButton");
+  document.getElementById("workEducationButton").classList.remove("selectedButton");
+  document.getElementById("projectsButton").classList.add("selectedButton");
+  document.getElementById("interestsButton").classList.remove("selectedButton");
 }
 
 const interestsButtonHandler = () => {
@@ -31,4 +46,9 @@ const interestsButtonHandler = () => {
   document.getElementById("workEducation").style.display = "none";
   document.getElementById("projects").style.display = "none";
   document.getElementById("interests").style.display = "block";
+
+  document.getElementById("aboutButton").classList.remove("selectedButton");
+  document.getElementById("workEducationButton").classList.remove("selectedButton");
+  document.getElementById("projectsButton").classList.remove("selectedButton");
+  document.getElementById("interestsButton").classList.add("selectedButton");
 }
