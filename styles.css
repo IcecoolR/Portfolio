@@ -1,6 +1,11 @@
 /* Mobile and Global Styles */
 /* Applies to screens smaller than 500px and above unless overwritten below */
 
+:root {
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+}
+
 ul, a, body {
   margin: 0;
   padding: 0;
@@ -11,7 +16,7 @@ ul, a, body {
 
 body {
   background-color: #212830;
-  background-image: url('assets/background.jpg');
+  background-image: url('assets/Background Gradient.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -21,11 +26,20 @@ body {
   color: #ffffff;
   text-align: center;
   margin: 8rem 1rem;
-  font-size: 2rem;
+}
+
+#intro h1 {
+  animation: h1 4s linear forwards;
+  font-size: 6rem;
+}
+
+@keyframes h1 {
+  0% { transform: translateY(5rem); }
+  100% { transform: translateY(0); }
 }
 
 #intro p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   animation: fadeIn 5s ease-in forwards;
 }
 
@@ -34,21 +48,13 @@ body {
   100% { opacity: 1; }
 }
 
-#intro h1 {
-  animation: h1 4s linear forwards;
-}
-
-@keyframes h1 {
-  0% { transform: translateY(5rem); }
-  100% { transform: translateY(0); }
-}
-
 #intro a {
   color: white;
   font-size: 5rem;
+  cursor: pointer;
   text-decoration: none;
-  -webkit-transition: color 1s;
   transition: color 1s;
+  -webkit-transition: color 1s;
   animation: arrowAnimation 4s cubic-bezier(0, 0, 0.5, 4) forwards;
 }
 
@@ -58,14 +64,14 @@ body {
 }
 
 #intro a:hover {
-  color: #15eded;
+  color: cyan;
 }
 
 #main {
   margin: 1rem;
   box-shadow: 10px 10px 5px;
   opacity: 0;
-  animation: fadeInAlmost 3s linear forwards 2s;
+  animation: fadeInAlmost 5s ease-in forwards ;
 }
 
 @keyframes fadeInAlmost {
@@ -79,23 +85,29 @@ body {
 
 #mainNav ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 #mainNav a {
-  padding: 2rem 0rem;
-  font-size: 1.4rem;
+  padding: 4rem 0rem;
   color: white;
-  text-decoration: none;
-  text-align: center;
   width: 100%;
   cursor: pointer;
   transition: 1s;
 }
 
+#mainNav a p {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+  transform: rotate(70deg);
+}
+
 #mainNav a.selectedButton {
   color: black;
   background-color: #C6C6C6;
+  cursor: default;
 }
 
 #mainNav a:hover:not(.selectedButton) {
@@ -105,7 +117,7 @@ body {
 .section {
   background-color: #C6C6C6;
   padding: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .section div {
@@ -137,7 +149,7 @@ body {
 }
 
 #about #toolsContainer img {
-  height: 4rem;
+  height: 2rem;
   width: auto;
 }
 
@@ -174,7 +186,7 @@ body {
 
 #socialsNav a.fa:hover {
   background: #8E8E8E;
-  color: black;
+  color: darkblue;
 }
 
 .fa-linkedin {
@@ -214,14 +226,24 @@ body {
 
 @media screen and (min-width: 500px) {
 
-  #mainNav ul {
-    flex-direction: row;
+  #mainNav a p {
+    transform: rotate(0);
+  }
+
+  #mainNav a {
+    padding: 2rem 0.5rem;
   }
 
   #about #mainImage {
     height: 50%;
     width: 50%;
   }
+
+  #about #toolsContainer img {
+    height: 3rem;
+    width: auto;
+  }
+
 }
 
 /* Desktop Styles */

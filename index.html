@@ -11,15 +11,16 @@
     <title>👋 Richard (IcecoolR)</title>
 		<link rel="stylesheet" href="styles.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="scripts.js"></script>
+		<link rel="icon" href="assets/Icon.png">
+		<script src="scripts.js" defer></script>
 	</head>
   <body>
 
     <div id="intro">
 
       <h1>👋 Hello World</h1>
-      <p>I am Richard, a Software Engineer living in South East London.</p>
-      <a href="#main" class="fa fa-angle-double-down"></a>
+      <p>I am <b>Richard</b>, a Software Engineer living in South East London.</p>
+      <a onclick="scrollToMain()" class="fa fa-angle-double-down"></a>
 
     </div>
 
@@ -27,10 +28,10 @@
 
       <nav id="mainNav">
         <ul>
-          <a id="aboutButton" onclick="aboutButtonHandler()" class="selectedButton">About</a>
-          <a id="workEducationButton" onclick="wordEducationButtonHandler()">Work & Education</a>
-          <a id="projectsButton" onclick="projectsButtonHandler()">Projects</a>
-          <a id="interestsButton" onclick="interestsButtonHandler()">Interests</a>
+          <a id="aboutButton" onclick="aboutButtonHandler()" class="selectedButton"><p>About</p></a>
+          <a id="workEducationButton" onclick="wordEducationButtonHandler()"><p>Work & Education</p></a>
+          <a id="projectsButton" onclick="projectsButtonHandler()"><p>Projects</p></a>
+          <a id="interestsButton" onclick="interestsButtonHandler()"><p>Interests</p></a>
         </ul>
       </nav>
 
@@ -46,8 +47,9 @@
 				  </p>
 					<img id="mainImage" src="assets/DMU Graduation.jpg" alt="De Montfort University graduation photo">
 				</div>
-				<br>
+				<br><br>
 				<p>I have a versatile skill set, here are some of the tools I use: </p>
+				<br>
 				<div id="toolsContainer">
 					<img src="assets/tools/Java.png" alt="Java logo">
 					<img src="assets/tools/Scala.png" alt="Scala logo">
@@ -61,6 +63,7 @@
 					<img src="assets/tools/Eclipse.png" alt="Eclipse logo">
 					<img src="assets/tools/Gimp.png" alt="Gimp logo">
 				</div>
+				<br><br>
 				<p>For any enquires, feel free to contact me on my social medias below.</p>
 			</div>
 
@@ -71,6 +74,7 @@
 
       <div id="projects" class="section">
 				<p>TT1S</p>
+				<p>GitHub Public Projects</p>
 				<p>(More Coming Soon)</p>
 			</div>
 

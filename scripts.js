@@ -1,9 +1,8 @@
 "use strict";
 
-const aboutButton = document.getElementById("aboutButton");
-const workEducationButton = document.getElementById("workEducationButton");
-const projectsButton = document.getElementById("projectsButton");
-const interestsButton = document.getElementById("interestsButton");
+const scrollToMain = () => {
+  document.getElementById("main").scrollIntoView();
+}
 
 const aboutButtonHandler = () => {
   document.getElementById("about").style.display = "block";
