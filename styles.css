@@ -184,10 +184,6 @@ body {
   text-align: center;
 }
 
-#socialsNav ul {
-  justify-content: space-around;
-}
-
 #socialsNav a {
   padding: 1rem;
   font-size: 1.5rem;
