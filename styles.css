@@ -134,16 +134,16 @@ body {
   display: block;
 }
 
-#about #mainImage {
+#about #portfolioImage {
   box-shadow: 10px 10px 5px;
-  height: 100%;
   width: 100%;
+  height: auto;
 }
 
 #about #toolsContainer {
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   gap: 3rem;
 }
@@ -155,6 +155,19 @@ body {
 
 #workEducation {
   display: none;
+}
+
+#workEducation #DMUModulesContainer {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+#workEducation #DMUModulesContainer img {
+  height: 100%;
+  width: 100%;
 }
 
 #projects {
@@ -169,6 +182,10 @@ body {
   background-color: #C6C6C6;
   padding: 1rem 0rem;
   text-align: center;
+}
+
+#socialsNav ul {
+  justify-content: space-around;
 }
 
 #socialsNav a {
@@ -234,13 +251,18 @@ body {
     padding: 2rem 0.5rem;
   }
 
-  #about #mainImage {
-    height: 50%;
-    width: 50%;
+  #about #portfolioImage {
+    width: auto;
+    height: 300px;
   }
 
   #about #toolsContainer img {
     height: 3rem;
+    width: auto;
+  }
+
+  #workEducation #DMUModulesContainer img {
+    height: 300px;
     width: auto;
   }
 
@@ -258,11 +280,6 @@ body {
     flex-direction: row;
     align-items: stretch;
     gap: 2rem;
-  }
-
-  #about #mainImage {
-    height: 25rem;
-    width: 25rem;
   }
 
   #socialsNav a {
