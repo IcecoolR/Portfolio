@@ -1,53 +1,63 @@
 "use strict";
 
+const aboutdiv = document.getElementById("about");
+const workEducationdiv = document.getElementById("workEducation");
+const projectsdiv = document.getElementById("projects");
+const interestsdiv = document.getElementById("interests");
+
+const aboutbtn = document.getElementById("aboutButton");
+const workEducationbtn = document.getElementById("workEducationButton");
+const projectsbtn = document.getElementById("projectsButton");
+const interestsbtn = document.getElementById("interestsButton");
+
 const scrollToMain = () => {
   document.getElementById("main").scrollIntoView();
 }
 
 const aboutButtonHandler = () => {
-  document.getElementById("about").style.display = "block";
-  document.getElementById("workEducation").style.display = "none";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("interests").style.display = "none";
+  aboutdiv.style.display = "block";
+  workEducationdiv.style.display = "none";
+  projectsdiv.style.display = "none";
+  interestsdiv.style.display = "none";
 
-  document.getElementById("aboutButton").classList.add("selectedButton");
-  document.getElementById("workEducationButton").classList.remove("selectedButton");
-  document.getElementById("projectsButton").classList.remove("selectedButton");
-  document.getElementById("interestsButton").classList.remove("selectedButton");
+  aboutbtn.classList.add("selectedButton");
+  workEducationbtn.classList.remove("selectedButton");
+  projectsbtn.classList.remove("selectedButton");
+  interestsbtn.classList.remove("selectedButton");
 }
 
 const wordEducationButtonHandler = () => {
-  document.getElementById("about").style.display = "none";
-  document.getElementById("workEducation").style.display = "block";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("interests").style.display = "none";
+  aboutdiv.style.display = "none";
+  workEducationdiv.style.display = "block";
+  projectsdiv.style.display = "none";
+  interestsdiv.style.display = "none";
 
-  document.getElementById("aboutButton").classList.remove("selectedButton");
-  document.getElementById("workEducationButton").classList.add("selectedButton");
-  document.getElementById("projectsButton").classList.remove("selectedButton");
-  document.getElementById("interestsButton").classList.remove("selectedButton");
+  aboutbtn.classList.remove("selectedButton");
+  workEducationbtn.classList.add("selectedButton");
+  projectsbtn.classList.remove("selectedButton");
+  interestsbtn.classList.remove("selectedButton");
 }
 
 const projectsButtonHandler = () => {
-  document.getElementById("about").style.display = "none";
-  document.getElementById("workEducation").style.display = "none";
-  document.getElementById("projects").style.display = "block";
-  document.getElementById("interests").style.display = "none";
+  aboutdiv.style.display = "none";
+  workEducationdiv.style.display = "none";
+  projectsdiv.style.display = "block";
+  interestsdiv.style.display = "none";
 
-  document.getElementById("aboutButton").classList.remove("selectedButton");
-  document.getElementById("workEducationButton").classList.remove("selectedButton");
-  document.getElementById("projectsButton").classList.add("selectedButton");
-  document.getElementById("interestsButton").classList.remove("selectedButton");
+  aboutbtn.classList.remove("selectedButton");
+  workEducationbtn.classList.remove("selectedButton");
+  projectsbtn.classList.add("selectedButton");
+  interestsbtn.classList.remove("selectedButton");
 }
 
 const interestsButtonHandler = () => {
-  document.getElementById("about").style.display = "none";
-  document.getElementById("workEducation").style.display = "none";
-  document.getElementById("projects").style.display = "none";
-  document.getElementById("interests").style.display = "block";
+  aboutdiv.style.display = "none";
+  workEducationdiv.style.display = "none";
+  projectsdiv.style.display = "none";
+  interestsdiv.style.display = "block";
 
-  document.getElementById("aboutButton").classList.remove("selectedButton");
-  document.getElementById("workEducationButton").classList.remove("selectedButton");
-  document.getElementById("projectsButton").classList.remove("selectedButton");
-  document.getElementById("interestsButton").classList.add("selectedButton");
+  aboutbtn.classList.remove("selectedButton");
+  workEducationbtn.classList.remove("selectedButton");
+  projectsbtn.classList.remove("selectedButton");
+  interestsbtn.classList.add("selectedButton");
 }
