@@ -1,6 +1,0 @@
-<img src="assets/education/FYP Screenshot.jpg" alt="Final Year Project">
-<img src="assets/education/Where Next Screenshot.jpg" alt="Where Next? Website">
-<img src="assets/education/OOD Screenshot.jpg" alt="Options Modules Chooser Java">
-<img src="assets/education/Functional Programming Screenshot.jpg" alt="Cesil Scala Functional Programming">
-<img src="assets/education/Data Mining Screenshot.jpg" alt="Data Mining Report">
-<img src="assets/education/SBM Screenshot.jpg" alt="Systems Building Methods Report">
