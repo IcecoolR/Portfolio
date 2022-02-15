@@ -12,6 +12,8 @@ const workEducationbtn = document.getElementById("workEducationButton");
 const projectsbtn = document.getElementById("projectsButton");
 const interestsbtn = document.getElementById("interestsButton");
 
+const chessBlitzRatingHighest = document.getElementById("chessBlitzRatingHighest");
+
 const scrollToMain = (e) => {
   if (e.type == "click" || e.code == "Enter" || e.code == "NumpadEnter" ) {
     document.getElementById("main").scrollIntoView();
@@ -73,6 +75,24 @@ const interestsButtonHandler = (e) => {
     interestsbtn.classList.add("selectedButton");
   }
 }
+
+fetch("https://api.chess.com/pub/player/icecoolr/stats")
+  .then( (response) => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      console.log("Failed to get chess.com stats: " + response);
+      chessBlitzRatingHighest.textContent = "about 1000";
+    }
+  })
+  .then( (data) => {
+    chessBlitzRatingHighest.textContent = data.chess_blitz.best.rating;
+  })
+  .catch( (error) => {
+    console.log("Error with chess.com stats.");
+    chessBlitzRatingHighest.textContent = "about 1000";
+  });
+
 
 downArrow.addEventListener("click", scrollToMain);
 downArrow.addEventListener("keydown", scrollToMain);
