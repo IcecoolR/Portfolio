@@ -36,7 +36,7 @@ ul, a, body, figure {
 body {
   background-color: #20262e;
   background-image: radial-gradient(at 50% 0%, #5c563f, #20262e);
-  font-family: cursive;
+  font-family: georgia;
 }
 
 #intro {
