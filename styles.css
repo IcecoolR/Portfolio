@@ -188,8 +188,8 @@ body {
 
 figure {
   box-shadow: 10px 10px 5px;
-  height: 100%;
   width: 100%;
+  height: auto;
   display: flex;
   flex-flow: column;
 }
@@ -337,8 +337,8 @@ figcaption a {
   }
 
   figure {
-    height: 45%;
     width: 45%;
+    height: auto;
   }
 
 }
