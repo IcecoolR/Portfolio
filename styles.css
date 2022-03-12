@@ -194,6 +194,10 @@ figure {
   flex-flow: column;
 }
 
+figure img {
+  object-fit: scale-down;
+}
+
 figcaption {
   background-color: #20262e;
   color: white;
