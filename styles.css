@@ -195,7 +195,7 @@ figure {
 }
 
 figure img {
-  object-fit: scale-down;
+  object-fit: contain;
 }
 
 figcaption {
