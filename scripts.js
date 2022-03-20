@@ -17,6 +17,7 @@ const chessBlitzRatingHighest = document.getElementById("chessBlitzRatingHighest
 const scrollToMain = (e) => {
   if (e.type == "click" || e.code == "Enter" || e.code == "NumpadEnter" ) {
     document.getElementById("main").scrollIntoView();
+    document.activeElement.blur();
   }
 }
 
