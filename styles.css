@@ -25,7 +25,10 @@
   background: #555555;
 }
 
-ul, a, body, figure {
+ul,
+a,
+body,
+figure {
   margin: 0;
   padding: 0;
   border: 0;
@@ -52,8 +55,13 @@ body {
 }
 
 @keyframes h1 {
-  0% { transform: translateY(5rem); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 #intro p {
@@ -62,8 +70,13 @@ body {
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 #intro a {
@@ -77,8 +90,13 @@ body {
 }
 
 @keyframes arrowAnimation {
-  0% { transform: translateY(-5rem); }
-  100% { transform: translateY(0); }
+  0% {
+    transform: translateY(-5rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 #intro a:hover,
@@ -90,12 +108,17 @@ body {
   margin: 1rem;
   box-shadow: 10px 10px 5px;
   opacity: 0;
-  animation: fadeInAlmost 5s ease-in forwards ;
+  animation: fadeInAlmost 5s ease-in forwards;
 }
 
 @keyframes fadeInAlmost {
-  0% { opacity: 0; }
-  100% { opacity: 0.9; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.9;
+  }
 }
 
 #mainNav {
