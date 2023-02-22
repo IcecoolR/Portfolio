@@ -1,5 +1,4 @@
-# IcecoolR's Portfolio 📖
+# Portfolio 📖
 
-This repository hosts my portfolio. <br>
-It is a website that I talk about my education, projects and interests. <br>
-Check it out [here](https://icecoolr.github.io/Portfolio/)!
+This repository hosts Richard's (aka IcecoolR) Portfolio. Which is a website where I talk about my education, projects and interests. <br>
+Check it out on [GitHub Pages](https://icecoolr.github.io/Portfolio/)!
