@@ -38,7 +38,8 @@ figure {
 
 body {
   background-color: #20262e;
-  background-image: radial-gradient(at 50% 0%, #5c563f, #20262e);
+  background-image: radial-gradient(at 50% 0%, #5c563f, #20262e 70%);
+  background-repeat: no-repeat;
   font-family: georgia;
 }
 
@@ -317,10 +318,6 @@ figcaption a {
 
 @media screen and (min-width: 500px) {
 
-  body {
-    background-image: radial-gradient(at 50% 0%, #5c563f, #20262e);
-  }
-
   #main {
     margin: 2rem;
   }
@@ -337,6 +334,9 @@ figcaption a {
   #about #portfolioImage {
     width: auto;
     height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #about #toolsContainer img {
