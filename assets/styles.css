@@ -150,7 +150,7 @@ body {
 
 #mainNav a.selectedButton {
   color: black;
-  background-color: #C6C6C6;
+  background-color: #E1E1E1;
   cursor: default;
 }
 
@@ -160,7 +160,7 @@ body {
 }
 
 .section {
-  background-color: #C6C6C6;
+  background-color: #E1E1E1;
   padding: 2rem;
   font-size: 1.2rem;
 }
@@ -257,7 +257,7 @@ figcaption a {
 }
 
 #socialsNav {
-  background-color: #C6C6C6;
+  background-color: #E1E1E1;
   padding: 1rem 0rem;
   text-align: center;
 }
