@@ -179,7 +179,7 @@ body {
   display: block;
 }
 
-#about #portfolioImage {
+#interests #portfolioImage {
   box-shadow: 10px 10px 5px;
   width: 100%;
   height: auto;
@@ -258,7 +258,7 @@ figcaption a {
 
 #socialsNav {
   background-color: #E1E1E1;
-  padding: 1rem 0rem;
+  padding: 2rem 0rem;
   text-align: center;
 }
 
@@ -331,9 +331,9 @@ figcaption a {
     padding: 2rem 0.5rem;
   }
 
-  #about #portfolioImage {
+  #interests #portfolioImage {
     width: auto;
-    height: 300px;
+    height: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
