@@ -77,24 +77,6 @@ const interestsButtonHandler = (e) => {
   }
 }
 
-fetch("https://api.chess.com/pub/player/icecoolr/stats")
-  .then((response) => {
-    if (response.ok) {
-      return response.json();
-    } else {
-      console.log("Failed to get chess.com stats: " + response);
-      chessBlitzRatingHighest.textContent = "about 1000";
-    }
-  })
-  .then((data) => {
-    chessBlitzRatingHighest.textContent = data.chess_blitz.best.rating;
-  })
-  .catch((error) => {
-    console.log("Error with chess.com stats.");
-    chessBlitzRatingHighest.textContent = "about 1000";
-  });
-
-
 downArrow.addEventListener("click", scrollToMain);
 downArrow.addEventListener("keydown", scrollToMain);
 
@@ -109,3 +91,19 @@ projectsbtn.addEventListener("keydown", projectsButtonHandler);
 
 interestsbtn.addEventListener("click", interestsButtonHandler);
 interestsbtn.addEventListener("keydown", interestsButtonHandler);
+
+
+// Fetch chess.com stats
+
+fetch("https://api.chess.com/pub/player/icecoolr/stats")
+  .then((response) => {
+    if (!response.ok) throw new Error("Network response was not ok");
+    return response.json();
+  })
+  .then((data) => {
+    chessBlitzRatingHighest.textContent = data.chess_blitz.best.rating;
+  })
+  .catch((error) => {
+    console.log("Error with chess.com stats.");
+    chessBlitzRatingHighest.textContent = "about 1000";
+  });
