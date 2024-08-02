@@ -175,6 +175,10 @@ body {
   text-align: left;
 }
 
+.section a {
+  color: #2ec021;
+}
+
 #about {
   display: block;
 }
@@ -232,10 +236,6 @@ figcaption {
   font-size: 1.2rem;
 }
 
-figcaption a {
-  color: #aacdf1;
-}
-
 #projects {
   display: none;
 }
@@ -250,10 +250,6 @@ figcaption a {
 
 #interests {
   display: none;
-}
-
-#interests a {
-  color: #09008b;
 }
 
 #socialsNav {
