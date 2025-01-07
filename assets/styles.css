@@ -106,7 +106,7 @@ body {
 }
 
 #main {
-  margin: 1rem;
+  margin: 1rem 1rem 10rem 1rem;
   box-shadow: 10px 10px 5px;
   opacity: 0;
   animation: fadeInAlmost 5s ease-in forwards;
@@ -315,7 +315,7 @@ figcaption {
 @media screen and (min-width: 500px) {
 
   #main {
-    margin: 2rem;
+    margin: 2rem 2rem 20rem 2rem;
   }
 
   #mainNav a p {
@@ -347,7 +347,7 @@ figcaption {
 @media screen and (min-width: 1000px) {
 
   #main {
-    margin: 4rem;
+    margin: 4rem 4rem 20rem 4rem;
   }
 
   .section div {
