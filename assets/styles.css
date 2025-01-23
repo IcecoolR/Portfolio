@@ -231,8 +231,7 @@ figure img {
 figcaption {
   background-color: #20262e;
   color: white;
-  text-align: center;
-  padding: 1.5rem 1rem;
+  padding: 1rem;
   font-size: 1.2rem;
 }
 
@@ -338,6 +337,10 @@ figcaption {
   #about #toolsContainer img {
     height: 3rem;
     width: auto;
+  }
+
+  figcaption {
+    padding: 1.5rem;
   }
 
 }
