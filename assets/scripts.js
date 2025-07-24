@@ -105,5 +105,5 @@ fetch("https://api.chess.com/pub/player/icecoolr/stats")
   })
   .catch((error) => {
     console.log("Error with chess.com stats.");
-    chessBlitzRatingHighest.textContent = "about 1000";
+    chessBlitzRatingHighest.textContent = "about 1200+";
   });
