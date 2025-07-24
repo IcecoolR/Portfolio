@@ -35,7 +35,7 @@ const aboutButtonHandler = (e) => {
   }
 }
 
-const wordEducationButtonHandler = (e) => {
+const workEducationButtonHandler = (e) => {
   if (e.type == "click" || e.code == "Enter" || e.code == "NumpadEnter") {
     aboutdiv.style.display = "none";
     workEducationdiv.style.display = "block";
@@ -83,8 +83,8 @@ downArrow.addEventListener("keydown", scrollToMain);
 aboutbtn.addEventListener("click", aboutButtonHandler);
 aboutbtn.addEventListener("keydown", aboutButtonHandler);
 
-workEducationbtn.addEventListener("click", wordEducationButtonHandler);
-workEducationbtn.addEventListener("keydown", wordEducationButtonHandler);
+workEducationbtn.addEventListener("click", workEducationButtonHandler);
+workEducationbtn.addEventListener("keydown", workEducationButtonHandler);
 
 projectsbtn.addEventListener("click", projectsButtonHandler);
 projectsbtn.addEventListener("keydown", projectsButtonHandler);
