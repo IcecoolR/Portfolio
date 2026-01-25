@@ -25,6 +25,27 @@
   background: #555555;
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
 ul,
 a,
 body,
@@ -157,6 +178,7 @@ body {
 #mainNav a:hover:not(.selectedButton),
 #mainNav a:focus:not(.selectedButton) {
   background-color: #8E8E8E;
+  text-decoration: underline;
 }
 
 .section {
@@ -219,7 +241,9 @@ figure {
   width: 100%;
   height: auto;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 figure img {
@@ -231,8 +255,10 @@ figure img {
 figcaption {
   background-color: #20262e;
   color: white;
-  padding: 1rem;
-  font-size: 1.2rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: center;
 }
 
 #projects {
